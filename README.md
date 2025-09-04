@@ -46,7 +46,7 @@
 
 ---
 
-## 👨‍💻 Autor  
+## 👨‍💻 Autores
 
 Proyecto realizado como parte de la materia **"Introducción a la Programación"** en **CESDE**.  
 
