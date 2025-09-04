@@ -3,9 +3,181 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mr Antojitos | Facturas</title>
+
+    <!-- Agregando Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- Agregando Iconos de Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <!-- Agregando Icono del sitio web -->
+    <link rel="icon" type="image/x-icon" href="">
+
+
+    <!-- Agregando CSS personalizado -->
+    <link rel="stylesheet" href="../styles/styles.css">
+
 </head>
+
 <body>
-    <h1>Facturas</h1>
+
+    <!-- Barra de navegacion -->
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <a class="navbar-brand" href="#">
+                        <img src="../Images/logo.png" alt="No image yet" width="100">
+                    </a>
+                    <ul class="navbar-nav d-flex justify-content-center alighn-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../Index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Inventario</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-disabled="true" href="Ventas.html">Ventas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-disabled="true" href="#">Facturas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-disabled="true" href="Personas.html">Personas</a>
+                        </li>
+                        <li class="nav-item">
+                            <button class="btn-logout" type="submit"><a class="text-decoration-none text-dark" href="login.html">Cerrar Sesión</a></button>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Sesion principal -->
+
+    <main class="container mt-5 ">
+
+        <h1 class="title text-center">Gestion de Facturas</h1>
+
+        <!-- botón para agregar datos -->
+
+        <div class="d-flex justify-content-end mb-3">
+            <button class="btn btn-add" type="button">Agregar</button>
+        </div>
+
+        <!-- Tabla de datos -->
+
+        <table class="table table-striped table-hover table-bordered text-center container-main">
+            <thead>
+                <tr>
+                    <th scope="col">Id</th>
+                    <th scope="col">Fecha</th>
+                    <th scope="col">Cliente</th>
+                    <th scope="col">Total</th>
+                    <th scope="col">Estado</th>
+                    <th scope="col">Vendedor</th>
+                    <th scope="col">Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>2025-09-04</td>
+                    <td>Patricia Toro</td>
+                    <td>$150.000</td>
+                    <td>Pagada</td>
+                    <td>Mateo Arcila</td>
+                    <td>
+                        <button class="btn btn-edit" type="button"><i class="bi bi-pencil-fill"></i></button>
+                        <button class="btn btn-delete" type="button"><i class="bi bi-trash-fill"></i></button>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>2025-09-03</td>
+                    <td>Juan Pérez</td>
+                    <td>$80.000</td>
+                    <td>Pendiente</td>
+                    <td>Patricia Toro</td>
+                    <td>
+                        <button class="btn btn-edit" type="button"><i class="bi bi-pencil-fill"></i></button>
+                        <button class="btn btn-delete" type="button"><i class="bi bi-trash-fill"></i></button>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>2025-09-02</td>
+                    <td>María Gómez</td>
+                    <td>$120.000</td>
+                    <td>Anulada</td>
+                    <td>Luis Garcia</td>
+                    <td>
+                        <button class="btn btn-edit" type="button"><i class="bi bi-pencil-fill"></i></button>
+                        <button class="btn btn-delete" type="button"><i class="bi bi-trash-fill"></i></button>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td>2025-09-01</td>
+                    <td>Carlos Ruiz</td>
+                    <td>$200.000</td>
+                    <td>Pagada</td>
+                    <td>Fernando Alonso</td>
+                    <td>
+                        <button class="btn btn-edit" type="button"><i class="bi bi-pencil-fill"></i></button>
+                        <button class="btn btn-delete" type="button"><i class="bi bi-trash-fill"></i></button>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">5</th>
+                    <td>2025-08-31</td>
+                    <td>Laura Martínez</td>
+                    <td>$95.000</td>
+                    <td>Pendiente</td>
+                    <td>Mateo Arcila</td>
+                    <td>
+                        <button class="btn btn-edit" type="button"><i class="bi bi-pencil-fill"></i></button>
+                        <button class="btn btn-delete" type="button"><i class="bi bi-trash-fill"></i></button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+
+
+
+        <nav aria-label="Page navigation example mt-4 d-flex justify-content-center paginator">
+            <ul class="pagination">
+                <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
+        </nav>
+
+    </main>
+
+    <footer style="margin-top: 125px;">
+        <div class="text-center p-3 footer">
+            © 2025 Copyright:
+            <a class="text-dark" href="#">Mr Antojitos</a>
+        </div>
+    </footer>
+
+    <!-- Agregando Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
