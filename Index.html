@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr Antojitos</title>
+
+    <!-- Agregando Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- Agregando Iconos de Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <!-- Agregando Icono del sitio web -->
+    <link rel="icon" type="image/x-icon" href="">
+
+
+    <!-- Agregando CSS personalizado -->
+    <link rel="stylesheet" href="styles/styles.css">
+
+</head>
+
+<body>
+
+    <!-- Barra de navegacion -->
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <a class="navbar-brand" href="#">
+                        <img src="Images/logo.png" alt="No image yet" width="100">
+                    </a>
+                    <ul class="navbar-nav d-flex justify-content-center alighn-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/pages/Inventario.html">Inventario</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-disabled="true" href="/pages/Ventas.html">Ventas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-disabled="true" href="/pages/Facturas.html">Facturas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-disabled="true" href="/pages/Personas.html">Personas</a>
+                        </li>
+                        <li class="nav-item">
+                            <button class="btn-logout" type="submit"><a class="text-decoration-none text-dark" href="/pages/login.html">Cerrar Sesión</a></button>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Sesion principal -->
+
+    <main class="container mt-4">
+        <section class="jumbotron text-center">
+            <h1 class="display-4 title">Sistema interno de Mr Antojitos</h1>
+            <p class="lead sub-title">Te damos la bienvenida</p>
+            <hr class="my-4">
+            <p class="message">Explora nuestro sistema de una manera facil e intuitiva.</p>
+            <hr>
+        </section>
+
+        <section class="row mt-4 text-center justify-content-center">
+            <div class="col-md-4 mb-4 ">
+                <a href="pages/Inventario.html" class="text-decoration-none text-dark">
+                    <div class="card h-100 clickable-item">
+                        <i class="bi bi-archive-fill icon card-img-top"></i>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Inventario</h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <a href="pages/Ventas.html" class="text-decoration-none text-dark">
+                    <div class="card h-100 clickable-item">
+                        <i class="bi bi-cart-fill icon card-img-top"></i>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Ventas</h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+        </section>
+
+        <section class="row mt-4 text-center justify-content-center">
+            <div class="col-md-4 mb-4">
+                <a href="pages/Facturas.html" class="text-decoration-none text-dark">
+                    <div class="card h-100 clickable-item">
+                        <i class="bi bi-receipt-cutoff icon card-img-top"></i>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Facturas</h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <a href="pages/Personas.html" class="text-decoration-none text-dark">
+                    <div class="card h-100 clickable-item">
+                        <i class="bi bi-person-fill icon card-img-top"></i>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Personas</h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+
+    <!-- Agregando Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
